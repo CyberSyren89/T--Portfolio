@@ -1,113 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tracey | Cybersecurity Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #212529;
-    }
-    header {
-      background-color: #111;
-      color: #0f0;
-      padding: 2rem;
-      text-align: center;
-      font-family: 'Courier New', monospace;
-    }
-    nav {
-      background-color: #333;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    h2 {
-      color: #000;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.5rem;
-    }
-    .project-title {
-      font-family: 'Courier New', monospace;
-      color: #006400;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #111;
-      color: #777;
-      font-size: 0.9rem;
-      font-family: 'Courier New', monospace;
-    }
-    .encoded-message {
-      color: #444;
-      font-size: 0.8rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracey's Cybersecurity Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #1c1c1c;
+            padding: 40px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            color: #00ff00;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        header h2 {
+            font-size: 1.2em;
+            color: #aaa;
+            margin-top: 10px;
+        }
+        .container {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        section {
+            margin: 50px 0;
+        }
+        .projects, .about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .project, .about-me {
+            background-color: #222;
+            padding: 25px;
+            flex: 1;
+            min-width: 280px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .project h3, .about-me h3 {
+            color: #00ff00;
+            font-size: 1.7em;
+            margin-bottom: 15px;
+        }
+        .project p, .about-me p {
+            color: #ddd;
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+        a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #1c1c1c;
+            color: #888;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #00ff00;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Tracey // Cybersecurity Portfolio</h1>
-    <p>Defending systems. Navigating chaos. Leaving no trace.</p>
-  </header>
+    <header>
+        <h1>Tracey's Cybersecurity Portfolio</h1>
+        <h2>Dedicated to mastering the art and science of securing the digital world.</h2>
+    </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#certs">Certifications</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <div class="container">
+        <!-- About Section -->
+        <section class="about">
+            <div class="about-me">
+                <h3>About Me</h3>
+                <p>I am a cybersecurity professional with a keen interest in both offensive and defensive security practices. With a background in compliance, I approach challenges with both a technical mindset and a focus on ensuring systems meet industry standards. I am driven to secure critical infrastructures while continually expanding my knowledge of emerging threats and technologies.</p>
+            </div>
+        </section>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm a cybersecurity professional specializing in offensive and defensive techniques. My work blends analytical precision with a love for decoding the unknown.</p>
-    </section>
+        <!-- Projects Section -->
+        <section class="projects">
+            <div class="project">
+                <h3>Controls and Compliance Checklist</h3>
+                <p>In this project, I developed a comprehensive controls and compliance checklist for a fictional company. The checklist was designed to ensure adherence to industry standards, mitigating risks and securing sensitive data. I focused on practical solutions for compliance with regulations such as GDPR and HIPAA, incorporating technical and organizational measures.</p>
+                <a href="https://github.com/yourusername/yourrepo" target="_blank">View Project on GitHub</a>
+            </div>
+        </section>
+    </div>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p class="project-title">Blackwatch: Controls & Compliance Audit</p>
-      <p>A NIST-based compliance audit simulation for a fictional enterprise. Delivered as a fully structured controls checklist with executive summary.</p>
-
-      <p class="project-title">Phantom Recon</p>
-      <p>A reconnaissance automation script for ethical penetration testing, integrating passive intel gathering and DNS footprinting.</p>
-    </section>
-
-    <section id="certs">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Google Cybersecurity Certificate (in progress)</li>
-        <li>CompTIA Security+ (studying)</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: tracey.cybersiren@protonmail.com</p>
-      <p>GitHub: github.com/CyberSiren</p>
-      <p>LinkedIn: linkedin.com/in/tracey-security</p>
-    </section>
-  </main>
-
-  <footer>
-    <p class="encoded-message">U2VjdXJpdHkgaXNuJ3QganVzdCBhIGpvYi4gSXRzIGEgdmliZS4=</p>
-    <p>&copy; 2025 Tracey | CyberSiren</p>
-  </footer>
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> | <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+    </footer>
 </body>
 </html>
